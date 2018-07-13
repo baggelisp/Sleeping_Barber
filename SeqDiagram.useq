@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.2" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="sleeping_barber.Main" project="sleeping_barber" 
+    file="/sleeping_barber/src/sleeping_barber/Main.java" binary="false" label="main" type="class" autoSize="false">    
+    <position height="99" width="122" x="0" y="0"/>    
+    <execution id="2">      
+      <position height="818" width="118" x="5" y="88"/>    
+    </execution>  
+  </object>  
+  <object id="9" language="java" name="sleeping_barber.Customer" project="sleeping_barber" 
+    file="/sleeping_barber/src/sleeping_barber/Customer.java" binary="false" label="customer" type="class" 
+    autoSize="false">    
+    <position height="99" width="167" x="122" y="0"/>    
+    <execution id="6">      
+      <position height="21" width="163" x="127" y="149"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="681" width="163" x="127" y="204"/>    
+    </execution>    
+    <execution id="11">      
+      <position height="618" width="7" x="205" y="246"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="21" width="7" x="208" y="801"/>    
+    </execution>  
+  </object>  
+  <object id="21" language="java" name="java.util.concurrent.Semaphore" project="sleeping_barber" 
+    file="C:/Program Files/Java/jre1.8.0_161/lib/rt.jar" binary="true" label="waitingSem" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="496"/>    
+    </execution>    
+    <execution id="22">      
+      <position height="21" width="89" x="294" y="708"/>    
+    </execution>  
+  </object>  
+  <object id="23" language="java" name="sleeping_barber.Waiting_room" project="sleeping_barber" 
+    file="/sleeping_barber/src/sleeping_barber/Waiting_room.java" binary="false" label="&lt;static&gt;" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="15">      
+      <position height="21" width="0" x="0" y="538"/>    
+    </execution>  
+  </object>  
+  <object id="24" language="java" name="java.util.concurrent.Semaphore" project="sleeping_barber" 
+    file="C:/Program Files/Java/jre1.8.0_161/lib/rt.jar" binary="true" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="645"/>    
+    </execution>    
+    <execution id="25">      
+      <position height="21" width="89" x="494" y="754"/>    
+    </execution>  
+  </object>  
+  <object id="26" language="java" name="sleeping_barber.Barber" project="sleeping_barber" 
+    file="/sleeping_barber/src/sleeping_barber/Barber.java" binary="false" label="&lt;static&gt;" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="19">      
+      <position height="156" width="0" x="0" y="687"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="21" width="72" x="587" y="109"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="Barber()" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="Customer(int)" asynchronous="false" x="69" y="128">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="run():void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="10" operation="Place_cust(java.awt.Button,int,int):void" asynchronous="true">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="acquire():void" asynchronous="false">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="takeASeat(sleeping_barber.Customer,java.awt.Button,int):void" asynchronous="false">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="acquire():void" asynchronous="false">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="cutHair(java.awt.Button,int):void" asynchronous="false">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="27" operation="release():void" asynchronous="false">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="28" operation="release():void" asynchronous="false">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="29" asynchronous="false">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>
+</sequence-diagram>
