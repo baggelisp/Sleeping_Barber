@@ -14,3 +14,12 @@ Sleeping Barber
 και αυτά τρέχουν ταυτόχρονα.
 
 Ο συγχρονισμός των νημάτων έγινε με σημαφόρους.
+
+Εικόνες:
+
+
+![alt text](https://github.com/baggelisp/Sleeping_Barber/blob/master/2.jpg?raw=true)
+
+![alt text](https://github.com/baggelisp/Sleeping_Barber/blob/master/3.jpg?raw=true)
+
+![alt text](https://github.com/baggelisp/Sleeping_Barber/blob/master/4.jpg?raw=true)
