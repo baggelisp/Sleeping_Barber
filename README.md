@@ -15,7 +15,7 @@
 
 Ο συγχρονισμός των νημάτων έγινε με σημαφόρους.
 
-### Εικόνες:
+#### Εικόνες:
 
 
 ![alt text](https://github.com/baggelisp/Sleeping_Barber/blob/master/2.jpg?raw=true)
